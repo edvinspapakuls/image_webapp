@@ -17,7 +17,7 @@ if ($pfp_status==0) {
 echo '<div class="profile mr-3"><img src="files/def.png" alt="..." width="130" class="rounded mb-2 img-thumbnail">';
 }
 else {
-    echo 'new picture aviable';
+    echo "<div class='profile mr-3'><img src='files/images/$pfp_status' alt='...' width='130' class='rounded mb-2 img-thumbnail'>";
 }
 ?>
 
