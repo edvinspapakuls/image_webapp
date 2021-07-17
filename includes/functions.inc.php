@@ -42,7 +42,7 @@ function createUser($db_connection, $username, $psw) {
     $sql2 ="select * from public.users where username = '".$username."' and user_password ='".$psw."'";
     $data2 = pg_query($db_connection, $sql2);
     $user_data = pg_fetch_assoc($data2);
-    $sql3 = "insert into public.profile(user_id, pfp_status) values('".$user_data['user_id']."', 0)";
+    $sql3 = "insert into public.profile(user_id, pfp_status) values('".$user_data['user_id']."', '0')";
     $data3 = pg_query($db_connection, $sql3);
     }
 

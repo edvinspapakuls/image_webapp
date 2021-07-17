@@ -41,8 +41,10 @@ body {
             <div class="px-4 pt-0 pb-4 cover">
                 <div class="media align-items-end profile-head">
                     <?php
-                    if ($pfp_status==0){
+                    if ($pfp_status=='0'){
                         echo '<div class="profile mr-3"><img src="files/def.png" alt="..." width="130" class="rounded mb-2 img-thumbnail">';
+                    } else {
+                        echo "<div class='profile mr-3'><img src='files/images/$pfp_status' alt='...' width='130' class='rounded mb-2 img-thumbnail'>";
                     }
                     ?>
                     <!-- <div class="profile mr-3"><img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." width="130" class="rounded mb-2 img-thumbnail"> -->
